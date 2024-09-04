@@ -30,18 +30,18 @@ img { max-width: 100%; height: auto; }
 }
 
 @media screen {
+	.top-bar{display: flex; justify-content: space-between; width: 100%;}
 	body{background-color: #ECEDEB;}
 	.printed-sheet { box-shadow: 0 32px 32px #00000033;} 
 	.btn {padding: 1rem 2rem;
 		text-transform: uppercase;
 		border-radius: 999px;
-		color: white;
-		background-color: #0C2749;
-		border: none;
+		border: solid 1px #0C2749;
 		cursor: pointer;
 	}
 	.btn:hover {
 		background-color: #485C77;
+		color: white;
 	}
 	.group {
 		padding-block: 4rem;
