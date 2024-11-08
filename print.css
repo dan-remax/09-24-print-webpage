@@ -3,16 +3,7 @@
 @page { size: 8.5in 11in; margin: 0; } 
 
 body { font-family: 'Montserrat'; display: flex; align-items: center; justify-content:center; } 
-.printed-sheet {
-	width: 8.5in;
-	height: 11in;
-	display: flex;
-	flex-direction: column;
-	overflow: hidden;
-	justify-content: space-between;
-	gap: 12pt;
-	background-color: white;
-}
+.printed-sheet {width: 8.5in;height: 11in;display: flex;flex-direction: column;overflow: hidden;justify-content: space-between;gap: 12pt;background-color: white; } 
 
 h1 { line-height: 1.2; margin-bottom: 6pt; font-weight: 300; font-size: 24pt; } 
 p { line-height: 1.2; font-weight: 300; font-size: 11pt; } 
@@ -26,33 +17,16 @@ img { max-width: 100%; height: auto; }
 .office-email { font-size: smaller; } 
 .fine-print { font-size: 8px; line-height: 1.2; padding: .125in .5in .25in; text-align: center; } 
 
-@media print {.display-only { display: none; } 
-}
-
-@media screen {
-	.top-bar{display: flex; justify-content: space-between; width: 100%;}
-	body{background-color: #ECEDEB;}
-	.printed-sheet { box-shadow: 0 32px 32px #00000033;} 
-	.btn {padding: 1rem 2rem;
-		text-transform: uppercase;
-		border-radius: 999px;
-		border: solid 1px #0C2749;
-		cursor: pointer;
-	}
-	.btn:hover {
-		background-color: #485C77;
-		color: white;
-	}
-	.group {
-		padding-block: 4rem;
-		display: flex;
-		align-items: center;
-		flex-direction: column;
-		gap: 2rem;
-	}
+@media print { .display-only { display: none; } 
  }
- @media screen and (max-width: 815px) {
-  .group {
-    transform: scale(.75);
-  }
-}
+
+@media screen {.top-bar { display: flex; justify-content: space-between; width: 100%; } 
+body { background-color: #ECEDEB; } 
+.printed-sheet { box-shadow: 0 32px 32px #00000033; } 
+.btn { padding: 1rem 2rem;text-transform: uppercase;border-radius: 999px;border: solid 1px #0C2749;cursor: pointer; } 
+.btn:hover {background-color: #485C77;color: white; } 
+.group {padding-block: 4rem;display: flex;align-items: center;flex-direction: column;gap: 2rem; } 
+ }
+ @media screen and (max-width: 815px){
+ .group { transform: scale(.75); } 
+ }
